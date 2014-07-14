@@ -1,7 +1,7 @@
 % In diesem Dokument werden die globalen \usepackage{}-Befehle eingefügt.
 % Definition des Seitestils (Ränder, Schriftart, Abstände, usw.)
 
-\documentclass[a4paper, oneside]{book}
+\documentclass[a4paper, oneside, 11pt]{book}
 \usepackage[top=2.5cm, bottom=2cm, left=3cm, right=2cm]{geometry}
 
 \usepackage[utf8]{inputenc}
@@ -25,5 +25,15 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+
+\usepackage{titlesec} % Im folgenden werden die Schriftarten der Überschriften gesetzt.
+\titleformat{\chapter}[display] {\fontfamily{phv} \huge}{\chaptertitlename\ \thechapter}{-5pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+\titleformat{\section}[display] {\fontfamily{phv} \tiny}{}{0pt}{\LARGE \thesection\ }
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titleformat{\subsection}[display] {\fontfamily{phv} \tiny}{}{-15pt}{\Large \thesubsection\ }
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+\titleformat{\subsubsection}[display] {\fontfamily{phv} \tiny}{}{-15pt}{\large \thesubsubsection\ }
+\titlespacing*{\subsubsection}{0pt}{0pt}{0pt}
 
 %\usepackage{showframe} % Auskommentieren, um die Layoutgrenzen anzuzeigen

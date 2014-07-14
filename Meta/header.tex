@@ -27,13 +27,21 @@
 \pagestyle{fancy}
 
 \usepackage{titlesec} % Im folgenden werden die Schriftarten der Überschriften gesetzt.
-\titleformat{\chapter}[display] {\fontfamily{phv} \huge}{\chaptertitlename\ \thechapter}{-5pt}{\Huge}
+\titleformat{\chapter}[display] {\sffamily \huge}{\chaptertitlename\ \thechapter}{-5pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
-\titleformat{\section}[display] {\fontfamily{phv} \tiny}{}{0pt}{\LARGE \thesection\ }
+\titleformat{\section}[display] {\sffamily \tiny}{}{0pt}{\LARGE \thesection\ }
 \titlespacing*{\section}{0pt}{0pt}{0pt}
-\titleformat{\subsection}[display] {\fontfamily{phv} \tiny}{}{-15pt}{\Large \thesubsection\ }
+\titleformat{\subsection}[display] {\sffamily \tiny}{}{-15pt}{\Large \thesubsection\ }
 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
-\titleformat{\subsubsection}[display] {\fontfamily{phv} \tiny}{}{-15pt}{\large \thesubsubsection\ }
+\titleformat{\subsubsection}[display] {\sffamily \tiny}{}{-15pt}{\large \thesubsubsection\ }
 \titlespacing*{\subsubsection}{0pt}{0pt}{0pt}
+
+\usepackage[titles]{tocloft}
+\renewcommand{\cftchapfont}{\bf\sffamily}
+\renewcommand{\cftsecfont}{\sffamily}
+\renewcommand{\cftsubsecfont}{\sffamily}
+
+\renewcommand{\cfttabfont}{\sffamily}
+\renewcommand{\cftfigfont}{\sffamily}
 
 %\usepackage{showframe} % Auskommentieren, um die Layoutgrenzen anzuzeigen

@@ -1,0 +1,29 @@
+% In diesem Dokument werden die globalen \usepackage{}-Befehle eingefügt.
+% Definition des Seitestils (Ränder, Schriftart, Abstände, usw.)
+
+\documentclass[a4paper, oneside]{book}
+\usepackage[top=2.5cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\selectlanguage{ngerman}
+
+\usepackage[bottom]{footmisc} % Fußnoten nach unten stellen
+
+\setlength{\parindent}{0em} % Absatzeinrückung linksbündig
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{parskip}
+
+\usepackage{graphicx}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{} % Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{} % Removes space above \chapter* head
+\makeatother
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%\usepackage{showframe} % Auskommentieren, um die Layoutgrenzen anzuzeigen

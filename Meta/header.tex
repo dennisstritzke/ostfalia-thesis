@@ -49,4 +49,31 @@
 \usepackage{csquotes}
 \usepackage[square, numbers]{natbib}
 
+\usepackage[pdftex,
+			pdfauthor={\documentauthor},
+			pdftitle={\documenttitle\ - \documentsubtitle},
+			pdfsubject={\documentsubject},
+			pdfkeywords={Betreuer:\ \documenttutor},
+			pdfborder={0 0 0}
+]{hyperref}
+
+\usepackage{lmodern}
+\usepackage{listings}
+\lstset{
+	showspaces=false,
+	showtabs=false,
+	breaklines=true,
+	showstringspaces=false,
+%	basicstyle=\ttfamily
+}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white} \sffamily}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\renewcommand{\lstlistingname}{Programmauszug}
+
 %\usepackage{showframe} % Auskommentieren, um die Layoutgrenzen anzuzeigen

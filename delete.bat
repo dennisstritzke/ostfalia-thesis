@@ -11,3 +11,5 @@ del *blx.bib
 del *.pdf
 del *.bcf
 del *.bak
+del *.lol
+del *.out

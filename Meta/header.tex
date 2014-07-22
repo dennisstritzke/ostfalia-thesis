@@ -22,7 +22,19 @@
 \makeatother
 
 \usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
 \pagestyle{fancy}
+
+
+\fancypagestyle{titlepage}
+{
+	\setcounter{page}{-100000}
+	\fancyhf{}
+	\fancyfootoffset{0pt}
+	\fancyheadoffset{0pt}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
 
 \usepackage{titlesec} % Im folgenden werden die Schriftarten der Überschriften gesetzt.
 \titleformat{\chapter}[display] {\sffamily \huge}{\chaptertitlename\ \thechapter}{-5pt}{\Huge}
@@ -69,8 +81,13 @@
 \usepackage{listings}
 
 \usepackage{caption}
+
+\newlength\myx
+\setlength\myx{\textwidth}
+\addtolength\myx{-2\fboxsep}
+
 \DeclareCaptionFont{white}{\color{white} \sffamily}
-\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\myx}{#1#2#3}}}
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
 \renewcommand{\lstlistingname}{Programmauszug}
 

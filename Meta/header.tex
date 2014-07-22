@@ -69,9 +69,17 @@
 \usepackage{listings}
 
 \usepackage{caption}
+
+\newlength\myx
+%\newlength\myxa
+%\setlength\myxa{\fboxsep}
+%\addtolength\myxa{\fboxrule}
+\setlength\myx{\textwidth}
+\addtolength\myx{-2\fboxsep}
+
 \DeclareCaptionFont{white}{\color{white} \sffamily}
-\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\myx}{#1#2#3}}}
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
 \renewcommand{\lstlistingname}{Programmauszug}
 
-%\usepackage{showframe} % Auskommentieren, um die Layoutgrenzen anzuzeigen
+\usepackage{showframe} % Auskommentieren, um die Layoutgrenzen anzuzeigen

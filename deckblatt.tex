@@ -1,43 +1,51 @@
 % Deckblatt
 \frontmatter
 \begin{titlepage}
-	\setcounter{page}{-100000}
-	\vspace*{-1cm}
+	\thispagestyle{titlepage}
+	\newgeometry{top=2cm, bottom=3.5cm, left=1.5cm, right=1.5cm}
 	
-	\hspace{6.90cm}
-	\includegraphics[scale=0.93]{Bilder/ostfalia_logo.jpg}\\
+	\hfill
+	\includegraphics[scale=0.93]{Bilder/ostfalia_logo.jpg}
 	
-	\hspace{-1.00cm}
-	\includegraphics[scale=1.20]{Bilder/reiter_wf_174mm.jpg}\\
+	\includegraphics[scale=1.20]{Bilder/reiter_wf_174mm.jpg}
 	
-	\hspace{-0.5cm}{\Large\textsf{Fakultät Informatik}}
-	
-	\vfil
-	\hrulefill
-	
-	%-------------------------------------------------------------------------------
-	
-	{\Large\textbf{\textsf{\documentsubject}}}
-	
-	\vspace{2em}
-	
-	{\Huge\textbf{\textsf{\documenttitle}}}
-	
-	\vspace{2em}
-	
-	{\Large\textsf{\documentsubtitle}}
-	
-	\hrulefill\\
-	
-	%-------------------------------------------------------------------------------
+	\hspace{1cm}
+	\begin{minipage}{\dimexpr\textwidth-1.5cm\relax}
+		{\Large\textsf{Fakultät Informatik}}
+	\end{minipage}
 	
 	\vfil
 	
-	{\Large\textsf{Autor: \documentauthor}}
+	%-------------------------------------------------------------------------------
+	\hspace{1cm}
+	\begin{minipage}{\dimexpr\textwidth-1.5cm\relax}
+		\hrulefill
 	
-	\vspace{1em}
+		{\Large\textbf{\textsf{\documentsubject}}}
+			
+		\vspace{2em}
+			
+		{\Huge\textbf{\textsf{\documenttitle}}}
+			
+		\vspace{2em}
+			
+		{\Large\textsf{\documentsubtitle}}
+		
+		\hrulefill
+	\end{minipage}	
 	
-	{\Large\textsf{Betreuer: \documenttutor}}
+	
+	%-------------------------------------------------------------------------------
+	\vfil
+	
+	\hspace{1cm}
+	\begin{minipage}{\dimexpr\textwidth-1.5cm\relax}
+		{\Large\textsf{Autor: \documentauthor}}
+		
+		\vspace{0.5cm}		
+		
+		{\Large\textsf{Betreuer: \documenttutor}}
+	\end{minipage}
 	
 	\vspace{2em}
 	
@@ -45,9 +53,9 @@
 	
 	\enlargethispage{10\baselineskip}
 	
-	\hspace*{-1.00cm}\includegraphics[scale=1.20]{Bilder/reiter_szsudwob_174mm.jpg}
-	\vspace*{2cm}
+	\includegraphics[scale=1.20]{Bilder/reiter_szsudwob_174mm.jpg}
 	
 	%*******************************************************************************
-	
 \end{titlepage}
+
+\restoregeometry

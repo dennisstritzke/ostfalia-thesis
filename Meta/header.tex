@@ -25,6 +25,17 @@
 \setlength{\headheight}{14.5pt}
 \pagestyle{fancy}
 
+
+\fancypagestyle{titlepage}
+{
+	\setcounter{page}{-100000}
+	\fancyhf{}
+	\fancyfootoffset{0pt}
+	\fancyheadoffset{0pt}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+
 \usepackage{titlesec} % Im folgenden werden die Schriftarten der Überschriften gesetzt.
 \titleformat{\chapter}[display] {\sffamily \huge}{\chaptertitlename\ \thechapter}{-5pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
@@ -72,9 +83,6 @@
 \usepackage{caption}
 
 \newlength\myx
-%\newlength\myxa
-%\setlength\myxa{\fboxsep}
-%\addtolength\myxa{\fboxrule}
 \setlength\myx{\textwidth}
 \addtolength\myx{-2\fboxsep}
 

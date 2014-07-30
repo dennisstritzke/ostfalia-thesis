@@ -1,11 +1,15 @@
 \documentclass[a4paper, oneside, 11pt]{book}
 \usepackage[utf8]{inputenc}
 
+\newif\ifdraft
+\drafttrue % Sagt aus, dass dieses Dokument ein Entwurf ist. Somit wird todonotes aktiviert. Zum deaktivieren diese Zeile auskommentieren oder auf \draftfalse setzen.
+
 \input{meta/commands}
 \input{meta/header}
 \input{meta/silbentrennung}
 
 \begin{document}
+	\listoftodos
 	\input{deckblatt}
 	
 	\tableofcontents

@@ -93,4 +93,10 @@
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
 \renewcommand{\lstlistingname}{Quelltext}
 
+\ifdraft
+	\usepackage{todonotes}
+\else
+	\usepackage[disable]{todonotes}
+\fi
+
 %\usepackage{showframe} % Auskommentieren, um die Layoutgrenzen anzuzeigen

@@ -13,3 +13,4 @@ del *.bcf
 del *.bak
 del *.lol
 del *.out
+del *.tdo

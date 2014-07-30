@@ -4,8 +4,9 @@
 *.lot
 *.toc
 *.synctex.gz
-*.pdf
+Hauptdokument.pdf
 *.bbl
 *.blg
 *.lol
 *.out
+*.tdo

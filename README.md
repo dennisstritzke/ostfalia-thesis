@@ -1,6 +1,7 @@
 Ostfalia Thesis
 ===============
 In diesem Repository ist eine LaTeX-Vorlage für eine wissenschaftliche Arbeit an der Ostfalia verfügbar. Dies kann eine einfache Hausarbeit, eine Bachelor- oder Masterarbeit sein. Wenn das Deckblatt verändert wird, ist diese Vorlage sicher auch für andere Universitäten und (Fach-)Hoschulen verwendbar.
+Das [Beispieldokuemnt](../blob/master/Beispieldokument.pdf) ist direkt zur Ansicht in diesem Repository eingefügt.
 
 An dieser Stelle vielen Dank für die Mithilfe von Bastian Schulten.
 

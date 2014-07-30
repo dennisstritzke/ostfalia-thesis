@@ -72,7 +72,11 @@
 	showtabs=false,
 	breaklines=true,
 	showstringspaces=false,
-%	basicstyle=\ttfamily
+	basicstyle=\ttfamily,
+	frame=lt,
+	rulecolor=\color{gray},
+	framerule=3pt,
+	xleftmargin=6pt,
 }
 \usepackage{color}
 \usepackage{xcolor}
@@ -87,6 +91,6 @@
 \DeclareCaptionFont{white}{\color{white} \sffamily}
 \DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\myx}{#1#2#3}}}
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
-\renewcommand{\lstlistingname}{Programmauszug}
+\renewcommand{\lstlistingname}{Quelltext}
 
 %\usepackage{showframe} % Auskommentieren, um die Layoutgrenzen anzuzeigen

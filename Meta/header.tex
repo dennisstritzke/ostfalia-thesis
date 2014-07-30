@@ -59,13 +59,11 @@
 \usepackage{csquotes}
 \usepackage[square, numbers]{natbib}
 
-\usepackage[pdftex,
-			pdfauthor={\documentauthor},
-			pdftitle={\documenttitle\ - \documentsubtitle},
-			pdfsubject={\documentsubject},
-			pdfkeywords={Betreuer:\ \documenttutor},
-			pdfborder={0 0 0}
-]{hyperref}
+\usepackage[pdftex, pdfborder={0 0 0}]{hyperref}
+\hypersetup{pdfauthor={\documentauthor},
+	pdftitle={\documenttitle\ - \documentsubtitle},
+	pdfsubject={\documentsubject},
+	pdfkeywords={Betreuer:\ \documenttutor}}
 
 \usepackage{lmodern}
 \usepackage{listings}
